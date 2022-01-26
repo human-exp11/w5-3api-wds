@@ -22,18 +22,77 @@
     <title>Work Day Scheduler</title>
   </head>
 
-  <body>
+<body>
     <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+        <h1 class="display-3">Work Day Scheduler</h1>
+        <p class="lead">A simple calendar app for scheduling your work day</p>
+        <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
-    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  </body>
+    <div class="container">
+        <!-- Timeblocks go here -->
+        <div class="row time-blocks" id="nine">
+            <div class="col-lg-1 hour">9:00</div>
+            <textarea id="sched9" class="user-event col-lg-1"></textarea>
+            <button id="save9" class="btn saveBtn col-lg-1"> </button>
+        </div>
+        <div class="row time-blocks" id="ten">
+            <div class="col-lg-1 hour">10:00</div>
+            <textarea id="sched10" class="user-event col-lg-1"></textarea>
+            <button id="save10" class="btn saveBtn col-lg-1"> </button>
+        </div>
+        <div class="row time-blocks" id="eleven">
+            <div class="col-lg-1 hour">11:00</div>
+            <textarea id="sched11" class="user-event col-lg-1"></textarea>
+            <button id="save11" class="btn saveBtn col-lg-1"> </button>
+        </div>
+        <div class="row time-blocks" id="twelve">
+            <div class="col-lg-1 hour">12:00</div>
+            <textarea id="sched12" class="user-event col-lg-1"></textarea>
+            <button id="save12" class="btn saveBtn col-lg-1"> </button>
+        </div>
+        <div class="row time-blocks" id="thirteen">
+            <div class="col-lg-1 hour">1:00</div>
+            <textarea id="sched13" class="user-event col-lg-1"></textarea>
+            <button id="save13" class="btn saveBtn col-lg-1"> </button>
+        </div>
+        <div class="row time-blocks" id="fourteen">
+            <div class="col-lg-1 hour">2:00</div>
+            <textarea id="sched14" class="user-event col-lg-1"></textarea>
+            <button id="save14" class="btn saveBtn col-lg-1"> </button>
+        </div>
+        <div class="row time-blocks" id="fifteen">
+            <div class="col-lg-1 hour">3:00</div>
+            <textarea id="sched15" class="user-event col-lg-1"></textarea>
+            <button id="save15" class="btn saveBtn col-lg-1"> </button>
+        </div>
+        <div class="row time-blocks" id="sixteen">
+            <div class="col-lg-1 hour">4:00</div>
+            <textarea id="sched16" class="user-event col-lg-1"></textarea>
+            <button id="save16" class="btn saveBtn col-lg-1"> </button>
+        </div>
+        <div class="row time-blocks" id="seventeen">
+            <div class="col-lg-1 hour">5:00</div>
+            <textarea id="sched17" class="user-event col-lg-1"></textarea>
+            <button id="save17" class="btn saveBtn col-lg-1"> </button>
+        </div>
+        <div class="row time-blocks" id="eighteen">
+            <div class="col-lg-1 hour">6:00</div>
+            <textarea id="sched18" class="user-event col-lg-1"></textarea>
+            <button id="save18" class="btn saveBtn col-lg-1"> </button>
+        </div>
+        <br/>
+        <div class="Reset">
+            <button id="clearData" class="btn clearBtn clearBtn:Hover">
+                Clear Schedule
+            </button>
+        </div>
+        <br />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script src="./assets/js/script.js"></script>
+</body>
 </html>
+
+
 
