@@ -1,8 +1,11 @@
+
+// moment.javascipt below
 var currentDate = moment().format('dddd') + " " + moment().format("Do MMM YYYY");
 var currentHour = moment().format('h:mm:ss a');
 var userInput;
 var hourSpan;
 
+// Variable for each text/hour
 var nine = $("#9");
 var ten = $("#10");
 var eleven = $("#11");
@@ -16,7 +19,7 @@ var six = $("#18");
 
 var hour = moment().hours();
 
-// Gets Current Date and Renders in Jumbotron Header
+// Gets Current Date and renders in Jumbotron header
 var interval = setInterval(function() {
     var momentNow = moment();
     $('#currentDay').html(momentNow.format('YYYY MMMM DD') + ' '
@@ -25,6 +28,7 @@ var interval = setInterval(function() {
     $('#currentDay').html(currentDate + " " + momentNow.format('hh:mm:ss A'));
 }, 100);
 
+// Function to get items from local storage
 function getTimes() {
     console.log("Current Hour " + hour);
     var init9 = JSON.parse(localStorage.getItem("09:00 am"));
@@ -49,6 +53,7 @@ function getTimes() {
     six.val(init6);
 } 
 
+// Function to display correct color related to the current hour
 function backgroundChange () {
       
     $(".form-control").each(function () {
@@ -70,7 +75,7 @@ function backgroundChange () {
 $(document).ready(function() {
     getTimes()
     backgroundChange()
-
+// Function to set content to local storage
     $(".saveBtn").on("click", function(){
         userInput = $(this).siblings(".form-control").val().trim();
         console.log(userInput);
