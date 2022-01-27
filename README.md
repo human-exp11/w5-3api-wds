@@ -28,11 +28,9 @@ THEN the saved events persist
 * Utilized Bootstrap to create a responsive container and organize my html time-blocks
 * Created functions to set and get information from local storage
 * Used JQuerey to populate past, present, and future colors associated with the current time
-* Utilized media-queries to create 2 viewport parameter
-* Created a function to clear the data form local storage
+* Created a function to clear the data from local storage
 * Created README file with link & screenshot
 
 [Live-site](https://human-exp11.github.io/w5-3api-wds/)
 
 ![Screenshot](./git-images/wds.png.)
-
