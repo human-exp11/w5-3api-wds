@@ -1,18 +1,18 @@
 var currentDate = moment().format('dddd') + " " + moment().format("Do MMM YYYY");
 var currentHour = moment().format('h:mm:ss a');
-var userLog;
+var userInput;
 var hourSpan;
 
-var nine = $("#sched9");
-var ten = $("#sched10");
-var eleven = $("#sched11");
-var twelve = $("#sched12");
-var one = $("#sched13");
-var two = $("#sched14");
-var three = $("#sched15");
-var four = $("#sched16");
-var five = $("#sched17");
-var six = $("#sched18");
+var nine = $("#9");
+var ten = $("#10");
+var eleven = $("#11");
+var twelve = $("#12");
+var one = $("#13");
+var two = $("#14");
+var three = $("#15");
+var four = $("#16");
+var five = $("#17");
+var six = $("#18");
 
 var hour = moment().hours();
 
@@ -27,7 +27,7 @@ var interval = setInterval(function() {
 
 function getTimes() {
     console.log("Current Hour " + hour);
-    var init9 = JSON.parse(localStorage.getItem("9:00 am"));
+    var init9 = JSON.parse(localStorage.getItem("09:00 am"));
     nine.val(init9);
     var init10 = JSON.parse(localStorage.getItem("10:00 am"))
     ten.val(init10);
@@ -35,17 +35,17 @@ function getTimes() {
     eleven.val(init11);
     var init12 = JSON.parse(localStorage.getItem("12:00 pm"))
     twelve.val(init12);
-    var init1 = JSON.parse(localStorage.getItem("1:00 pm"))
+    var init1 = JSON.parse(localStorage.getItem("01:00 pm"))
     one.val(init1);
-    var init2 = JSON.parse(localStorage.getItem("2:00 pm"))
+    var init2 = JSON.parse(localStorage.getItem("02:00 pm"))
     two.val(init2);
-    var init3 = JSON.parse(localStorage.getItem("3:00 pm"))
+    var init3 = JSON.parse(localStorage.getItem("03:00 pm"))
     three.val(init3);
-    var init4 = JSON.parse(localStorage.getItem("4:00 pm"))
+    var init4 = JSON.parse(localStorage.getItem("04:00 pm"))
     four.val(init4);
-    var init5 = JSON.parse(localStorage.getItem("5:00 pm"))
+    var init5 = JSON.parse(localStorage.getItem("05:00 pm"))
     five.val(init5);
-    var init6 = JSON.parse(localStorage.getItem("6:00 pm"))
+    var init6 = JSON.parse(localStorage.getItem("06:00 pm"))
     six.val(init6);
 } 
 
@@ -56,7 +56,7 @@ function backgroundChange () {
         hour = parseInt(hour);
         console.log(timeTest);
         console.log(hour);
-        console.log(this);
+        // console.log(this);
         if (hour > timeTest) {
             $(this).addClass("past");
         } else if (hour < timeTest) {
@@ -67,32 +67,16 @@ function backgroundChange () {
     });
 }
 
-// function backgroundChange() {
-//     $(".form-control").each(function () {
-//         var timeCheck = parseInt($(this).attr("id"));
-//         hour = parseInt(hour);
-//         console.log(timeCheck);
-//         console.log(hour);
-//         if (hour > timeCheck) {
-//             $(this).addClass("past");
-//         } else if (hour < timeCheck) {
-//             $(this).addClass("future");
-//         } else {
-//             $(this).addClass("present");
-//         }
-//     });
-// }
-
 $(document).ready(function() {
     getTimes()
     backgroundChange()
 
     $(".saveBtn").on("click", function(){
-        userLog = $(this).siblings(".form-control").val().trim();
-        console.log(userLog);
+        userInput = $(this).siblings(".form-control").val().trim();
+        console.log(userInput);
         hourSpan = $(this).siblings(".input-group-prepend").text().trim();
         console.log(hourSpan);
-        localStorage.setItem(hourSpan, JSON.stringify(userLog));
+        localStorage.setItem(hourSpan, JSON.stringify(userInput));
     })
     //Button to clear schedule
     $("#clearData").on("click", function(){

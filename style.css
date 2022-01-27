@@ -31,7 +31,7 @@ textarea{
     border-radius: 15px;
 }
   
-.form-control {
+.input-group-text {
     border: none;
 }
   
@@ -72,6 +72,7 @@ textarea{
     background-color: #06AED5;
     color: white;
     font-size: 20px;
+    width: 80px;
 }
   
 .saveBtn i:hover {
