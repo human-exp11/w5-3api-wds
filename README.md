@@ -5,6 +5,7 @@ Work Day Scheduler
 
 Using html and CSS starter code, I utilized JQuery within JavaScript to create a simple calendar application that allows a user to save events for each hour of the day.
 
+
 ## Acceptance Criteria
 
 GIVEN I am using a daily planner to create a schedule
@@ -21,6 +22,7 @@ THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
 
+
 ## Completed Steps:
 
 * Utilized various stylesheets to create a user-friendly calendar
@@ -33,6 +35,4 @@ THEN the saved events persist
 
 [Live-site](https://human-exp11.github.io/w5-3api-wds/)
 
-![Screenshot](./w5-3api-wds/git-images/wds.png)
-
-![Screenshot](C:\Users\lucae\code\Homework\w5-3api-wds\git-images\wds.png)
+![Screenshot](./wds.png.)
