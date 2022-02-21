@@ -33,6 +33,6 @@ THEN the saved events persist
 
 [Live-site](https://human-exp11.github.io/w5-3api-wds/)
 
-![Screenshot](w5-3api-wds/git-images/wds.png)
+![Screenshot](./w5-3api-wds/git-images/wds.png)
 
 ![Screenshot](C:\Users\lucae\code\Homework\w5-3api-wds\git-images\wds.png)
