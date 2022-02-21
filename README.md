@@ -35,4 +35,4 @@ THEN the saved events persist
 
 [Live-site](https://human-exp11.github.io/w5-3api-wds/)
 
-![Screenshot](./wds.png.)
+![Screenshot](./wds.jpeg)
